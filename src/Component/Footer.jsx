@@ -24,14 +24,14 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <Image
-                src="/logo.png"
+                src={"https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1200&auto=format&fit=crop&q=80"}
                 alt="pixgen logo"
                 width={32}
                 height={32}
                 className="dark:brightness-200"
               />
               <h2 className="text-xl font-semibold tracking-tight text-black dark:text-white">
-                pixgen
+                Our Product
               </h2>
             </div>
 
