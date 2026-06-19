@@ -1,6 +1,7 @@
 "use client"
 import { Button, Card, Chip, Separator } from "@heroui/react";
 import Image from "next/image";
+import Link from "next/link";
 import { FaHeart } from "react-icons/fa";
 import { IoMdDownload } from "react-icons/io";
 
@@ -46,7 +47,10 @@ const Photocard = ({ photo }) => {
           </div>
         </div>
       </div>
-      <Button onClick={handlebuttonphoto} className="w-full" variant="outline">View</Button>
+      <Link href={`/allphotos/${photo.id}`}>
+            <Button onClick={handlebuttonphoto} className="w-full" variant="outline">View</Button>
+
+      </Link>
     </Card>
   );
 };
